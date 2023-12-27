@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kişi Adı - Kişiye Özel Web Sitesi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #a53434;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+    }
+
+    section {
+      margin: 20px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #333;
+      padding: 10px;
+      color: white;
+    }
+
+    .soru {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .foto{
+        height: 200px;
+        width: 400px;
+        display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Orta Afrika'nın ilk sakinlerinden biri: Ecz. Zeynep Çobanoğlu</h1>
+    <ul>
+        <a href="https://tr.wikipedia.org/wiki/Pigmeler#:~:text=Orta%20Afrika'n%C4%B1n%20ilk%20sakinlerinden,boylar%C4%B1yla%20hat%C4%B1rlanan%20yerli%20bir%20kabiledir.">Pigme Kabilesi</a> 
+    </ul>
+    <img class="foto" src="20-facts-might-know-nightmare-before-christmas.webp" alt="">
+  </header>
+
+  <section>
+    <div class="yapilanlar">
+      <h2>2023 yaşanan birkaç olay</h2>
+      <img src="WhatsApp Image 2023-12-27 at 14.54.03.jpeg" alt="2023 Yapılanlar 1">
+      <p>Muğlada bisiklet turu</p>
+      <img src="WhatsApp Image 2023-12-27 at 15.38.52.jpeg" alt="2023 Yapılanlar 2">
+      <p>Adalarda kokteyl yapımı</p>
+      <img src="WhatsApp Image 2023-12-27 at 15.41.55.jpeg" alt="2023 Yapılanlar 2">
+      <p>Birkaç Konser</p>
+    </div>
+
+    <div class="yapacaklar">
+      <h2>2024 Yapılacaklar</h2>
+      <img src="WhatsApp Image 2023-12-27 at 15.44.30.jpeg" alt="2024 Yapacaklar 1">
+      <p>Daha fazla gezi...</p>
+      <img src="why-choose.jpg" alt="2024 Yapacaklar 2">
+      <p>Daha fazla bilgi....</p>
+      <img src="Yeni proje.gif" alt="2024 Yapacaklar 2">
+      <p>Daha fazla eğlence....</p>
+    </div>
+  </section>
+
+  <footer>
+    <h3>Zeynep'i gerçekten tanıyor musun!!!!!!</h3>
+    <p>Soru: Zeynep'in en sevdiği yılbaşı animasyonu hangisidir?</p>
+    <button onclick="cevapVer('evet')">Nightmare before christmas</button>
+    <button onclick="cevapVer('hayir')">A christmas carol</button>
+    <p id="cevap"></p>
+
+    <div class="soru">
+      <p>Soru: Zeynep bir adaya düşse, yanına hangi üçlüyü alırdı?</p>
+      <button onclick="cevapHobi('evet')">Bıçak, 100 LT su, Sınırsız kibrit</button>
+      <button onclick="cevapHobi('hayir')">Minik tatlı bir kupa, Emre, Nemlendirici krem</button>
+      <p id="cevapHobi"></p>
+    </div>
+
+    <div class="soru">
+      <p>Soru: Zeynep'in Pigme kabilesinden olduğu bilgisi ilk olarak hangi tarihçi tarafından dile getirilmiştir?</p>
+      <button onclick="cevapTanisma('evet')">Zeynep'in teyzesi</button>
+      <button onclick="cevapTanisma('hayir')">İlber Ortaylı</button>
+      <p id="cevapTanisma"></p>
+    </div>
+  </footer>
+
+  <script>
+    function cevapVer(cevap) {
+      document.getElementById('cevap').innerHTML = (cevap === 'evet') ? 'Bildin, fakat basit bir soruydu!' : 'Zeynepten uzak dur!!!!';
+    }
+
+    function cevapHobi(cevap) {
+      document.getElementById('cevapHobi').innerHTML = (cevap === 'evet') ? 'Malesef, yüzeysel bir cevap...' : 'Aynen öyle, çok iyi gidiyorsun.. ';
+    }
+
+    function cevapTanisma(cevap) {
+      document.getElementById('cevapTanisma').innerHTML = (cevap === 'evet') ? 'Tarih bilgin çok sağlam!' : 'Bu konuyu araştırmanı öneririm.';
+    }
+  </script>
+
+</body>
+</html>
